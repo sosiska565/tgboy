@@ -1,0 +1,3 @@
+/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles/mainservice.dir
+/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles/edit_cache.dir
+/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles/rebuild_cache.dir
