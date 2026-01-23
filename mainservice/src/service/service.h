@@ -7,16 +7,10 @@
 
 class Service{
     public:
-        int createUser(
-            int64_t id,
-            std::string name,
-            std::string secondname,
-            std::string description,
-            std::string city,
-            bool isSearching,
-            bool isSearchingGender,
-            int age
-        );
+        User createUser(User& user);
+        User updateUser(User& user);
+        std::vector<User> getUsers();
+        std::optional<User> getUserById(int64_t id);
 };
 
 #endif

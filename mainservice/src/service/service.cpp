@@ -2,21 +2,41 @@
 #include "../repository/user/user.h"
 #include "../repository/user/userRepository.h"
 #include <cstdint>
+#include <optional>
+#include <stdexcept>
 
-int Service::createUser(
-    int64_t id,
-    std::string name,
-    std::string secondname,
-    std::string description,
-    std::string city,
-    bool isSearching,
-    bool isSearchingGender,
-    int age
-){
-    std::string url = "host=localhost port=5432 dbname=sparktreat user=spark password=admin";
+std::string url = "host=localhost port=5432 dbname=sparktreat user=spark password=admin";
+
+std::vector<User> Service::getUsers(){
     UserRepository repo(url);
 
-    repo.saveUser(id, name, secondname, description, city, age, isSearching, isSearchingGender);
+    return repo.getUsers();
+}
 
-    return 0;
+User Service::createUser(User& user){
+    UserRepository repo(url);
+
+    User newUser = repo.saveUser(user);
+
+    return newUser;
+}
+
+User Service::updateUser(User& user){
+    UserRepository repo(url);
+
+    User newUser = repo.saveUser(user);
+
+    return newUser;
+}
+
+std::optional<User> Service::getUserById(int64_t id){
+    UserRepository repo(url);
+
+    std::optional<User> op_user = repo.getUserById(id);
+
+    if(op_user == std::nullopt){
+        throw std::runtime_error("User by id not found.");
+    }
+
+    return op_user;
 }

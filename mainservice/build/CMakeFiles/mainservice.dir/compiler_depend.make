@@ -3,6 +3,7 @@
 
 CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.cpp \
   /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/user.h \
+  /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/user.h \
   /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.h \
   /run/media/egor/ссд/project/tgboy/mainservice/src/service/service.h \
   /run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.h \
@@ -622,6 +623,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/forward_list.h \
+  /usr/include/c++/15.2.1/bits/forward_list.tcc \
   /usr/include/c++/15.2.1/bits/fs_dir.h \
   /usr/include/c++/15.2.1/bits/fs_fwd.h \
   /usr/include/c++/15.2.1/bits/fs_ops.h \
@@ -629,9 +632,12 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/bits/fstream.tcc \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
+  /usr/include/c++/15.2.1/bits/gslice.h \
+  /usr/include/c++/15.2.1/bits/gslice_array.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
   /usr/include/c++/15.2.1/bits/hashtable.h \
   /usr/include/c++/15.2.1/bits/hashtable_policy.h \
+  /usr/include/c++/15.2.1/bits/indirect_array.h \
   /usr/include/c++/15.2.1/bits/invoke.h \
   /usr/include/c++/15.2.1/bits/ios_base.h \
   /usr/include/c++/15.2.1/bits/istream.tcc \
@@ -644,6 +650,7 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
   /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
   /usr/include/c++/15.2.1/bits/localefwd.h \
+  /usr/include/c++/15.2.1/bits/mask_array.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
   /usr/include/c++/15.2.1/bits/monostate.h \
@@ -667,6 +674,7 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/bits/shared_ptr.h \
   /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/15.2.1/bits/slice_array.h \
   /usr/include/c++/15.2.1/bits/specfun.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
@@ -706,6 +714,10 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
+  /usr/include/c++/15.2.1/bits/valarray_after.h \
+  /usr/include/c++/15.2.1/bits/valarray_array.h \
+  /usr/include/c++/15.2.1/bits/valarray_array.tcc \
+  /usr/include/c++/15.2.1/bits/valarray_before.h \
   /usr/include/c++/15.2.1/bits/vector.tcc \
   /usr/include/c++/15.2.1/bits/version.h \
   /usr/include/c++/15.2.1/cassert \
@@ -742,6 +754,7 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
   /usr/include/c++/15.2.1/filesystem \
+  /usr/include/c++/15.2.1/forward_list \
   /usr/include/c++/15.2.1/fstream \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/future \
@@ -795,6 +808,7 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/c++/15.2.1/typeinfo \
   /usr/include/c++/15.2.1/unordered_map \
   /usr/include/c++/15.2.1/utility \
+  /usr/include/c++/15.2.1/valarray \
   /usr/include/c++/15.2.1/variant \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/version \
@@ -873,6 +887,52 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/сс
   /usr/include/netdb.h \
   /usr/include/netinet/in.h \
   /usr/include/netinet/tcp.h \
+  /usr/include/nlohmann/adl_serializer.hpp \
+  /usr/include/nlohmann/byte_container_with_subtype.hpp \
+  /usr/include/nlohmann/detail/abi_macros.hpp \
+  /usr/include/nlohmann/detail/conversions/from_json.hpp \
+  /usr/include/nlohmann/detail/conversions/to_chars.hpp \
+  /usr/include/nlohmann/detail/conversions/to_json.hpp \
+  /usr/include/nlohmann/detail/exceptions.hpp \
+  /usr/include/nlohmann/detail/hash.hpp \
+  /usr/include/nlohmann/detail/input/binary_reader.hpp \
+  /usr/include/nlohmann/detail/input/input_adapters.hpp \
+  /usr/include/nlohmann/detail/input/json_sax.hpp \
+  /usr/include/nlohmann/detail/input/lexer.hpp \
+  /usr/include/nlohmann/detail/input/parser.hpp \
+  /usr/include/nlohmann/detail/input/position_t.hpp \
+  /usr/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /usr/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /usr/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /usr/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /usr/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /usr/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /usr/include/nlohmann/detail/json_custom_base_class.hpp \
+  /usr/include/nlohmann/detail/json_pointer.hpp \
+  /usr/include/nlohmann/detail/json_ref.hpp \
+  /usr/include/nlohmann/detail/macro_scope.hpp \
+  /usr/include/nlohmann/detail/macro_unscope.hpp \
+  /usr/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /usr/include/nlohmann/detail/meta/call_std/end.hpp \
+  /usr/include/nlohmann/detail/meta/cpp_future.hpp \
+  /usr/include/nlohmann/detail/meta/detected.hpp \
+  /usr/include/nlohmann/detail/meta/identity_tag.hpp \
+  /usr/include/nlohmann/detail/meta/is_sax.hpp \
+  /usr/include/nlohmann/detail/meta/std_fs.hpp \
+  /usr/include/nlohmann/detail/meta/type_traits.hpp \
+  /usr/include/nlohmann/detail/meta/void_t.hpp \
+  /usr/include/nlohmann/detail/output/binary_writer.hpp \
+  /usr/include/nlohmann/detail/output/output_adapters.hpp \
+  /usr/include/nlohmann/detail/output/serializer.hpp \
+  /usr/include/nlohmann/detail/string_concat.hpp \
+  /usr/include/nlohmann/detail/string_escape.hpp \
+  /usr/include/nlohmann/detail/string_utils.hpp \
+  /usr/include/nlohmann/detail/value_t.hpp \
+  /usr/include/nlohmann/json.hpp \
+  /usr/include/nlohmann/json_fwd.hpp \
+  /usr/include/nlohmann/ordered_map.hpp \
+  /usr/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /usr/include/poll.h \
   /usr/include/pqxx/array.hxx \
   /usr/include/pqxx/binarystring.hxx \
@@ -972,6 +1032,7 @@ CMakeFiles/mainservice.dir/src/main.cpp.o: /run/media/egor/ссд/project/tgboy/
   /usr/include/stdc-predef.h
 
 CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.cpp \
+  /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/user.h \
   /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -994,9 +1055,19 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -1048,6 +1119,7 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/15.2.1/algorithm \
+  /usr/include/c++/15.2.1/any \
   /usr/include/c++/15.2.1/array \
   /usr/include/c++/15.2.1/backward/auto_ptr.h \
   /usr/include/c++/15.2.1/backward/binders.h \
@@ -1076,15 +1148,20 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/forward_list.h \
+  /usr/include/c++/15.2.1/bits/forward_list.tcc \
   /usr/include/c++/15.2.1/bits/fs_dir.h \
   /usr/include/c++/15.2.1/bits/fs_fwd.h \
   /usr/include/c++/15.2.1/bits/fs_ops.h \
   /usr/include/c++/15.2.1/bits/fs_path.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
+  /usr/include/c++/15.2.1/bits/gslice.h \
+  /usr/include/c++/15.2.1/bits/gslice_array.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
   /usr/include/c++/15.2.1/bits/hashtable.h \
   /usr/include/c++/15.2.1/bits/hashtable_policy.h \
+  /usr/include/c++/15.2.1/bits/indirect_array.h \
   /usr/include/c++/15.2.1/bits/invoke.h \
   /usr/include/c++/15.2.1/bits/ios_base.h \
   /usr/include/c++/15.2.1/bits/istream.tcc \
@@ -1097,6 +1174,7 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
   /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
   /usr/include/c++/15.2.1/bits/localefwd.h \
+  /usr/include/c++/15.2.1/bits/mask_array.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
   /usr/include/c++/15.2.1/bits/monostate.h \
@@ -1118,6 +1196,8 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/bits/shared_ptr.h \
   /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/15.2.1/bits/slice_array.h \
+  /usr/include/c++/15.2.1/bits/specfun.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/std_function.h \
@@ -1152,6 +1232,10 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
+  /usr/include/c++/15.2.1/bits/valarray_after.h \
+  /usr/include/c++/15.2.1/bits/valarray_array.h \
+  /usr/include/c++/15.2.1/bits/valarray_array.tcc \
+  /usr/include/c++/15.2.1/bits/valarray_before.h \
   /usr/include/c++/15.2.1/bits/vector.tcc \
   /usr/include/c++/15.2.1/bits/version.h \
   /usr/include/c++/15.2.1/cassert \
@@ -1161,6 +1245,7 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/chrono \
   /usr/include/c++/15.2.1/ciso646 \
   /usr/include/c++/15.2.1/clocale \
+  /usr/include/c++/15.2.1/cmath \
   /usr/include/c++/15.2.1/codecvt \
   /usr/include/c++/15.2.1/compare \
   /usr/include/c++/15.2.1/concepts \
@@ -1183,6 +1268,7 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
   /usr/include/c++/15.2.1/filesystem \
+  /usr/include/c++/15.2.1/forward_list \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/initializer_list \
   /usr/include/c++/15.2.1/iomanip \
@@ -1213,11 +1299,24 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/c++/15.2.1/string \
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/system_error \
+  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/15.2.1/tr1/gamma.tcc \
+  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/15.2.1/tr1/special_function_util.h \
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
   /usr/include/c++/15.2.1/typeinfo \
   /usr/include/c++/15.2.1/unordered_map \
   /usr/include/c++/15.2.1/utility \
+  /usr/include/c++/15.2.1/valarray \
   /usr/include/c++/15.2.1/variant \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/version \
@@ -1248,6 +1347,53 @@ CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/nlohmann/adl_serializer.hpp \
+  /usr/include/nlohmann/byte_container_with_subtype.hpp \
+  /usr/include/nlohmann/detail/abi_macros.hpp \
+  /usr/include/nlohmann/detail/conversions/from_json.hpp \
+  /usr/include/nlohmann/detail/conversions/to_chars.hpp \
+  /usr/include/nlohmann/detail/conversions/to_json.hpp \
+  /usr/include/nlohmann/detail/exceptions.hpp \
+  /usr/include/nlohmann/detail/hash.hpp \
+  /usr/include/nlohmann/detail/input/binary_reader.hpp \
+  /usr/include/nlohmann/detail/input/input_adapters.hpp \
+  /usr/include/nlohmann/detail/input/json_sax.hpp \
+  /usr/include/nlohmann/detail/input/lexer.hpp \
+  /usr/include/nlohmann/detail/input/parser.hpp \
+  /usr/include/nlohmann/detail/input/position_t.hpp \
+  /usr/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /usr/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /usr/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /usr/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /usr/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /usr/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /usr/include/nlohmann/detail/json_custom_base_class.hpp \
+  /usr/include/nlohmann/detail/json_pointer.hpp \
+  /usr/include/nlohmann/detail/json_ref.hpp \
+  /usr/include/nlohmann/detail/macro_scope.hpp \
+  /usr/include/nlohmann/detail/macro_unscope.hpp \
+  /usr/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /usr/include/nlohmann/detail/meta/call_std/end.hpp \
+  /usr/include/nlohmann/detail/meta/cpp_future.hpp \
+  /usr/include/nlohmann/detail/meta/detected.hpp \
+  /usr/include/nlohmann/detail/meta/identity_tag.hpp \
+  /usr/include/nlohmann/detail/meta/is_sax.hpp \
+  /usr/include/nlohmann/detail/meta/std_fs.hpp \
+  /usr/include/nlohmann/detail/meta/type_traits.hpp \
+  /usr/include/nlohmann/detail/meta/void_t.hpp \
+  /usr/include/nlohmann/detail/output/binary_writer.hpp \
+  /usr/include/nlohmann/detail/output/output_adapters.hpp \
+  /usr/include/nlohmann/detail/output/serializer.hpp \
+  /usr/include/nlohmann/detail/string_concat.hpp \
+  /usr/include/nlohmann/detail/string_escape.hpp \
+  /usr/include/nlohmann/detail/string_utils.hpp \
+  /usr/include/nlohmann/detail/value_t.hpp \
+  /usr/include/nlohmann/json.hpp \
+  /usr/include/nlohmann/json_fwd.hpp \
+  /usr/include/nlohmann/ordered_map.hpp \
+  /usr/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /usr/include/pqxx/array.hxx \
   /usr/include/pqxx/binarystring.hxx \
   /usr/include/pqxx/blob.hxx \
@@ -1348,9 +1494,19 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -1402,6 +1558,7 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/15.2.1/algorithm \
+  /usr/include/c++/15.2.1/any \
   /usr/include/c++/15.2.1/array \
   /usr/include/c++/15.2.1/backward/auto_ptr.h \
   /usr/include/c++/15.2.1/backward/binders.h \
@@ -1430,15 +1587,20 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/forward_list.h \
+  /usr/include/c++/15.2.1/bits/forward_list.tcc \
   /usr/include/c++/15.2.1/bits/fs_dir.h \
   /usr/include/c++/15.2.1/bits/fs_fwd.h \
   /usr/include/c++/15.2.1/bits/fs_ops.h \
   /usr/include/c++/15.2.1/bits/fs_path.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
+  /usr/include/c++/15.2.1/bits/gslice.h \
+  /usr/include/c++/15.2.1/bits/gslice_array.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
   /usr/include/c++/15.2.1/bits/hashtable.h \
   /usr/include/c++/15.2.1/bits/hashtable_policy.h \
+  /usr/include/c++/15.2.1/bits/indirect_array.h \
   /usr/include/c++/15.2.1/bits/invoke.h \
   /usr/include/c++/15.2.1/bits/ios_base.h \
   /usr/include/c++/15.2.1/bits/istream.tcc \
@@ -1451,6 +1613,7 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/bits/locale_facets_nonio.h \
   /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc \
   /usr/include/c++/15.2.1/bits/localefwd.h \
+  /usr/include/c++/15.2.1/bits/mask_array.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
   /usr/include/c++/15.2.1/bits/monostate.h \
@@ -1472,6 +1635,8 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/bits/shared_ptr.h \
   /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
+  /usr/include/c++/15.2.1/bits/slice_array.h \
+  /usr/include/c++/15.2.1/bits/specfun.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/std_function.h \
@@ -1506,6 +1671,10 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
+  /usr/include/c++/15.2.1/bits/valarray_after.h \
+  /usr/include/c++/15.2.1/bits/valarray_array.h \
+  /usr/include/c++/15.2.1/bits/valarray_array.tcc \
+  /usr/include/c++/15.2.1/bits/valarray_before.h \
   /usr/include/c++/15.2.1/bits/vector.tcc \
   /usr/include/c++/15.2.1/bits/version.h \
   /usr/include/c++/15.2.1/cassert \
@@ -1515,6 +1684,7 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/chrono \
   /usr/include/c++/15.2.1/ciso646 \
   /usr/include/c++/15.2.1/clocale \
+  /usr/include/c++/15.2.1/cmath \
   /usr/include/c++/15.2.1/codecvt \
   /usr/include/c++/15.2.1/compare \
   /usr/include/c++/15.2.1/concepts \
@@ -1537,6 +1707,7 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
   /usr/include/c++/15.2.1/filesystem \
+  /usr/include/c++/15.2.1/forward_list \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/initializer_list \
   /usr/include/c++/15.2.1/iomanip \
@@ -1567,11 +1738,24 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/c++/15.2.1/string \
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/system_error \
+  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/15.2.1/tr1/gamma.tcc \
+  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/15.2.1/tr1/special_function_util.h \
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
   /usr/include/c++/15.2.1/typeinfo \
   /usr/include/c++/15.2.1/unordered_map \
   /usr/include/c++/15.2.1/utility \
+  /usr/include/c++/15.2.1/valarray \
   /usr/include/c++/15.2.1/variant \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/version \
@@ -1602,6 +1786,53 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/pro
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/nlohmann/adl_serializer.hpp \
+  /usr/include/nlohmann/byte_container_with_subtype.hpp \
+  /usr/include/nlohmann/detail/abi_macros.hpp \
+  /usr/include/nlohmann/detail/conversions/from_json.hpp \
+  /usr/include/nlohmann/detail/conversions/to_chars.hpp \
+  /usr/include/nlohmann/detail/conversions/to_json.hpp \
+  /usr/include/nlohmann/detail/exceptions.hpp \
+  /usr/include/nlohmann/detail/hash.hpp \
+  /usr/include/nlohmann/detail/input/binary_reader.hpp \
+  /usr/include/nlohmann/detail/input/input_adapters.hpp \
+  /usr/include/nlohmann/detail/input/json_sax.hpp \
+  /usr/include/nlohmann/detail/input/lexer.hpp \
+  /usr/include/nlohmann/detail/input/parser.hpp \
+  /usr/include/nlohmann/detail/input/position_t.hpp \
+  /usr/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /usr/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /usr/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /usr/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /usr/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /usr/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /usr/include/nlohmann/detail/json_custom_base_class.hpp \
+  /usr/include/nlohmann/detail/json_pointer.hpp \
+  /usr/include/nlohmann/detail/json_ref.hpp \
+  /usr/include/nlohmann/detail/macro_scope.hpp \
+  /usr/include/nlohmann/detail/macro_unscope.hpp \
+  /usr/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /usr/include/nlohmann/detail/meta/call_std/end.hpp \
+  /usr/include/nlohmann/detail/meta/cpp_future.hpp \
+  /usr/include/nlohmann/detail/meta/detected.hpp \
+  /usr/include/nlohmann/detail/meta/identity_tag.hpp \
+  /usr/include/nlohmann/detail/meta/is_sax.hpp \
+  /usr/include/nlohmann/detail/meta/std_fs.hpp \
+  /usr/include/nlohmann/detail/meta/type_traits.hpp \
+  /usr/include/nlohmann/detail/meta/void_t.hpp \
+  /usr/include/nlohmann/detail/output/binary_writer.hpp \
+  /usr/include/nlohmann/detail/output/output_adapters.hpp \
+  /usr/include/nlohmann/detail/output/serializer.hpp \
+  /usr/include/nlohmann/detail/string_concat.hpp \
+  /usr/include/nlohmann/detail/string_escape.hpp \
+  /usr/include/nlohmann/detail/string_utils.hpp \
+  /usr/include/nlohmann/detail/value_t.hpp \
+  /usr/include/nlohmann/json.hpp \
+  /usr/include/nlohmann/json_fwd.hpp \
+  /usr/include/nlohmann/ordered_map.hpp \
+  /usr/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /usr/include/pqxx/array.hxx \
   /usr/include/pqxx/binarystring.hxx \
   /usr/include/pqxx/blob.hxx \
@@ -1850,6 +2081,48 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/pqxx/array.hxx:
 
+/usr/include/nlohmann/ordered_map.hpp:
+
+/usr/include/nlohmann/json_fwd.hpp:
+
+/usr/include/nlohmann/detail/value_t.hpp:
+
+/usr/include/nlohmann/detail/output/serializer.hpp:
+
+/usr/include/nlohmann/detail/output/binary_writer.hpp:
+
+/usr/include/nlohmann/detail/meta/void_t.hpp:
+
+/usr/include/nlohmann/detail/meta/type_traits.hpp:
+
+/usr/include/nlohmann/detail/meta/std_fs.hpp:
+
+/usr/include/nlohmann/detail/meta/is_sax.hpp:
+
+/usr/include/nlohmann/detail/meta/detected.hpp:
+
+/usr/include/nlohmann/detail/meta/cpp_future.hpp:
+
+/usr/include/nlohmann/detail/macro_scope.hpp:
+
+/usr/include/nlohmann/detail/json_pointer.hpp:
+
+/usr/include/nlohmann/detail/json_custom_base_class.hpp:
+
+/usr/include/nlohmann/detail/iterators/iter_impl.hpp:
+
+/usr/include/nlohmann/detail/iterators/internal_iterator.hpp:
+
+/usr/include/nlohmann/detail/input/lexer.hpp:
+
+/usr/include/nlohmann/detail/input/json_sax.hpp:
+
+/usr/include/nlohmann/detail/conversions/to_json.hpp:
+
+/usr/include/nlohmann/detail/conversions/from_json.hpp:
+
+/usr/include/nlohmann/adl_serializer.hpp:
+
 /usr/include/netinet/tcp.h:
 
 /usr/include/netinet/in.h:
@@ -1874,11 +2147,15 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/fcntl.h:
 
+/usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
+
 /usr/include/errno.h:
 
 /usr/include/endian.h:
 
 /usr/include/crow/websocket.h:
+
+/usr/include/nlohmann/detail/meta/call_std/end.hpp:
 
 /usr/include/crow/version.h:
 
@@ -1933,6 +2210,8 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 /usr/include/c++/15.2.1/vector:
 
 /usr/include/c++/15.2.1/variant:
+
+/usr/include/c++/15.2.1/valarray:
 
 /usr/include/c++/15.2.1/unordered_map:
 
@@ -1996,6 +2275,8 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/c++/15.2.1/functional:
 
+/usr/include/c++/15.2.1/forward_list:
+
 /usr/include/c++/15.2.1/filesystem:
 
 /usr/include/c++/15.2.1/ext/type_traits.h:
@@ -2030,8 +2311,6 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/c++/15.2.1/csignal:
 
-/usr/include/c++/15.2.1/condition_variable:
-
 /usr/include/c++/15.2.1/concepts:
 
 /usr/include/c++/15.2.1/compare:
@@ -2056,6 +2335,10 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/c++/15.2.1/bits/vector.tcc:
 
+/usr/include/c++/15.2.1/condition_variable:
+
+/usr/include/c++/15.2.1/bits/valarray_before.h:
+
 /usr/include/c++/15.2.1/bits/utility.h:
 
 /usr/lib32/liblber.so.2:
@@ -2074,7 +2357,11 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/pqxx/types.hxx:
 
+/usr/include/nlohmann/detail/input/binary_reader.hpp:
+
 /usr/include/c++/15.2.1/bits/stl_relops.h:
+
+/usr/include/nlohmann/detail/input/parser.hpp:
 
 /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
 
@@ -2112,7 +2399,11 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/c++/15.2.1/bits/specfun.h:
 
+/usr/include/c++/15.2.1/bits/slice_array.h:
+
 /usr/include/c++/15.2.1/bits/shared_ptr_base.h:
+
+/usr/include/nlohmann/detail/abi_macros.hpp:
 
 /usr/include/c++/15.2.1/bits/shared_ptr.h:
 
@@ -2128,6 +2419,8 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/c++/15.2.1/bits/move.h:
 
+/usr/include/c++/15.2.1/bits/mask_array.h:
+
 /usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/15.2.1/bits/locale_facets_nonio.h:
@@ -2140,9 +2433,13 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 
 /usr/include/c++/15.2.1/bits/invoke.h:
 
+/usr/include/c++/15.2.1/bits/indirect_array.h:
+
 /usr/include/c++/15.2.1/bits/hashtable_policy.h:
 
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
+
+/usr/include/c++/15.2.1/bits/gslice_array.h:
 
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
@@ -2153,6 +2450,8 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 /usr/include/c++/15.2.1/bits/fs_path.h:
 
 /usr/include/c++/15.2.1/bits/fs_dir.h:
+
+/usr/include/c++/15.2.1/bits/forward_list.tcc:
 
 /usr/include/pqxx/transaction_focus.hxx:
 
@@ -2187,6 +2486,8 @@ CMakeFiles/mainservice.dir/src/service/service.cpp.o:
 /usr/include/c++/15.2.1/bits/alloc_traits.h:
 
 /usr/include/pqxx/internal/statement_parameters.hxx:
+
+/usr/include/nlohmann/detail/output/output_adapters.hpp:
 
 /usr/include/c++/15.2.1/bits/align.h:
 
@@ -2242,7 +2543,11 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/bits/types/struct_timespec.h:
 
+/usr/include/nlohmann/detail/conversions/to_chars.hpp:
+
 /usr/include/bits/types/struct_osockaddr.h:
+
+/usr/include/nlohmann/detail/meta/call_std/begin.hpp:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
@@ -2286,6 +2591,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/execution/mapping.hpp:
 
+/usr/include/c++/15.2.1/bits/valarray_array.h:
+
 /usr/include/asio/detail/cstddef.hpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
@@ -2297,6 +2604,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/c++/15.2.1/version:
 
 /usr/include/asio/detail/call_stack.hpp:
+
+/usr/include/nlohmann/detail/input/position_t.hpp:
 
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
@@ -2386,6 +2695,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
 
+/usr/include/c++/15.2.1/bits/forward_list.h:
+
 /usr/include/asio/impl/deferred.hpp:
 
 /usr/include/asio/detail/reactive_socket_service_base.hpp:
@@ -2413,6 +2724,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/asio/detail/pop_options.hpp:
+
+/usr/include/nlohmann/detail/macro_unscope.hpp:
 
 /usr/include/asio/detail/operation.hpp:
 
@@ -2454,6 +2767,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/detail/impl/service_registry.ipp:
 
+/usr/include/nlohmann/detail/string_escape.hpp:
+
 /usr/include/asio/detail/chrono_time_traits.hpp:
 
 /usr/include/pqxx/internal/conversions.hxx:
@@ -2489,6 +2804,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/asio/detail/select_interrupter.hpp:
 
 /usr/include/asio/detail/initiate_dispatch.hpp:
+
+/usr/include/nlohmann/detail/string_utils.hpp:
 
 /usr/include/asio/detail/socket_holder.hpp:
 
@@ -2528,9 +2845,13 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/bits/termios-tcflow.h:
 
+/usr/include/nlohmann/detail/iterators/iteration_proxy.hpp:
+
 /usr/include/c++/15.2.1/bits/ostream.h:
 
 /usr/include/asio/execution/relationship.hpp:
+
+/usr/include/nlohmann/detail/iterators/primitive_iterator.hpp:
 
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
 
@@ -2808,6 +3129,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/detail/epoll_reactor.hpp:
 
+/usr/include/nlohmann/detail/iterators/iterator_traits.hpp:
+
 /usr/include/asio/buffered_stream_fwd.hpp:
 
 /usr/include/asio/buffered_stream.hpp:
@@ -2908,6 +3231,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/user.h:
 
+/usr/include/nlohmann/detail/input/input_adapters.hpp:
+
 /usr/include/asio/buffers_iterator.hpp:
 
 /usr/include/c++/15.2.1/debug/debug.h:
@@ -2917,6 +3242,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/asio/detail/impl/posix_serial_port_service.ipp:
 
 /usr/include/asio/impl/redirect_error.hpp:
+
+/usr/include/nlohmann/detail/json_ref.hpp:
 
 /usr/include/bits/flt-eval-method.h:
 
@@ -3072,6 +3399,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/detail/global.hpp:
 
+/usr/include/nlohmann/detail/string_concat.hpp:
+
 /usr/include/c++/15.2.1/cstdint:
 
 /usr/include/asio/traits/static_query.hpp:
@@ -3103,6 +3432,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/wchar.h:
+
+/usr/include/nlohmann/detail/exceptions.hpp:
 
 /usr/include/asio/generic/stream_protocol.hpp:
 
@@ -3158,6 +3489,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/ip/detail/impl/endpoint.ipp:
 
+/usr/include/nlohmann/detail/meta/identity_tag.hpp:
+
 /usr/include/asio/immediate.hpp:
 
 /usr/include/c++/15.2.1/bits/fstream.tcc:
@@ -3195,6 +3528,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/asio/ip/network_v4.hpp:
 
 /usr/include/asio/impl/cancel_at.hpp:
+
+/usr/include/nlohmann/detail/hash.hpp:
 
 /usr/include/asio/ip/host_name.hpp:
 
@@ -3236,7 +3571,11 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/impl/executor.hpp:
 
+/usr/include/c++/15.2.1/bits/gslice.h:
+
 /usr/include/asio/ip/address_v6.hpp:
+
+/usr/include/nlohmann/json.hpp:
 
 /usr/include/bits/types/struct_sched_param.h:
 
@@ -3422,6 +3761,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/read_at.hpp:
 
+/usr/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
+
 /usr/include/c++/15.2.1/bits/stl_tree.h:
 
 /usr/include/asio/detail/regex_fwd.hpp:
@@ -3444,9 +3785,13 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 
 /usr/include/asio/static_thread_pool.hpp:
 
+/usr/include/nlohmann/byte_container_with_subtype.hpp:
+
 /usr/include/asio/steady_timer.hpp:
 
 /usr/include/sys/uio.h:
+
+/usr/include/nlohmann/thirdparty/hedley/hedley.hpp:
 
 /usr/include/asm-generic/ioctl.h:
 
@@ -3517,6 +3862,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/asio/traits/static_require_concept.hpp:
 
 /usr/include/asio/use_awaitable.hpp:
+
+/usr/include/c++/15.2.1/bits/valarray_array.tcc:
 
 /usr/include/bits/types/__locale_t.h:
 
@@ -3681,6 +4028,8 @@ CMakeFiles/mainservice.dir/src/controller/controller.cpp.o:
 /usr/include/bits/signal_ext.h:
 
 /usr/lib/crti.o:
+
+/usr/include/c++/15.2.1/bits/valarray_after.h:
 
 /usr/include/bits/signum-arch.h:
 

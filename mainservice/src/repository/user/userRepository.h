@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include <pqxx/pqxx>
+#include "user.h"
 
 class UserRepository{
     private:
@@ -10,16 +11,9 @@ class UserRepository{
 
     public:
         UserRepository(const std::string& conn_str);
-        void saveUser(
-            int64_t id,
-            const std::string& name,
-            const std::string& secondname,
-            const std::string& description,
-            const std::string& city,
-            int age,
-            bool isSearching,
-            bool isSearchingGender
-        );
+        User saveUser(User& user);
+        std::vector<User> getUsers();
+        std::optional<User> getUserById(int64_t id);
 };
 
 #endif

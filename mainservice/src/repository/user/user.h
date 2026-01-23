@@ -2,6 +2,7 @@
 #define USER_H
 
 #include <string>
+#include <nlohmann/json.hpp>
 
 enum class UserState{
     IDLE,
@@ -109,6 +110,8 @@ class User {
         void setState(UserState state){
             this->state = state;
         }
+
+        NLOHMANN_DEFINE_TYPE_INTRUSIVE(User, tgid, age, name, secondname, description, city, isSearching, isSearchingGender, gender, state)
 };
 
 #endif
