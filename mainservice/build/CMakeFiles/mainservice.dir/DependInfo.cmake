@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.cpp" "CMakeFiles/mainservice.dir/src/controller/controller.cpp.o" "gcc" "CMakeFiles/mainservice.dir/src/controller/controller.cpp.o.d"
   "/run/media/egor/ссд/project/tgboy/mainservice/src/main.cpp" "CMakeFiles/mainservice.dir/src/main.cpp.o" "gcc" "CMakeFiles/mainservice.dir/src/main.cpp.o.d"
+  "/run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.cpp" "CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o" "gcc" "CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o.d"
+  "/run/media/egor/ссд/project/tgboy/mainservice/src/service/service.cpp" "CMakeFiles/mainservice.dir/src/service/service.cpp.o" "gcc" "CMakeFiles/mainservice.dir/src/service/service.cpp.o.d"
   "" "mainservice" "gcc" "CMakeFiles/mainservice.dir/link.d"
   )
 

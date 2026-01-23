@@ -129,6 +129,30 @@ mainservice/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/build
 .PHONY : mainservice/fast
 
+src/controller/controller.o: src/controller/controller.cpp.o
+.PHONY : src/controller/controller.o
+
+# target to build an object file
+src/controller/controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/controller/controller.cpp.o
+.PHONY : src/controller/controller.cpp.o
+
+src/controller/controller.i: src/controller/controller.cpp.i
+.PHONY : src/controller/controller.i
+
+# target to preprocess a source file
+src/controller/controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/controller/controller.cpp.i
+.PHONY : src/controller/controller.cpp.i
+
+src/controller/controller.s: src/controller/controller.cpp.s
+.PHONY : src/controller/controller.s
+
+# target to generate assembly for a file
+src/controller/controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/controller/controller.cpp.s
+.PHONY : src/controller/controller.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +177,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/repository/user/userRepository.o: src/repository/user/userRepository.cpp.o
+.PHONY : src/repository/user/userRepository.o
+
+# target to build an object file
+src/repository/user/userRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o
+.PHONY : src/repository/user/userRepository.cpp.o
+
+src/repository/user/userRepository.i: src/repository/user/userRepository.cpp.i
+.PHONY : src/repository/user/userRepository.i
+
+# target to preprocess a source file
+src/repository/user/userRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.i
+.PHONY : src/repository/user/userRepository.cpp.i
+
+src/repository/user/userRepository.s: src/repository/user/userRepository.cpp.s
+.PHONY : src/repository/user/userRepository.s
+
+# target to generate assembly for a file
+src/repository/user/userRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.s
+.PHONY : src/repository/user/userRepository.cpp.s
+
+src/service/service.o: src/service/service.cpp.o
+.PHONY : src/service/service.o
+
+# target to build an object file
+src/service/service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/service/service.cpp.o
+.PHONY : src/service/service.cpp.o
+
+src/service/service.i: src/service/service.cpp.i
+.PHONY : src/service/service.i
+
+# target to preprocess a source file
+src/service/service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/service/service.cpp.i
+.PHONY : src/service/service.cpp.i
+
+src/service/service.s: src/service/service.cpp.s
+.PHONY : src/service/service.s
+
+# target to generate assembly for a file
+src/service/service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/src/service/service.cpp.s
+.PHONY : src/service/service.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mainservice"
+	@echo "... src/controller/controller.o"
+	@echo "... src/controller/controller.i"
+	@echo "... src/controller/controller.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/repository/user/userRepository.o"
+	@echo "... src/repository/user/userRepository.i"
+	@echo "... src/repository/user/userRepository.s"
+	@echo "... src/service/service.o"
+	@echo "... src/service/service.i"
+	@echo "... src/service/service.s"
 .PHONY : help
 
 

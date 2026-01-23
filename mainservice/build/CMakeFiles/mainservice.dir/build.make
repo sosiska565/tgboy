@@ -86,18 +86,66 @@ CMakeFiles/mainservice.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mainservice.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/egor/ссд/project/tgboy/mainservice/src/main.cpp -o CMakeFiles/mainservice.dir/src/main.cpp.s
 
+CMakeFiles/mainservice.dir/src/service/service.cpp.o: CMakeFiles/mainservice.dir/flags.make
+CMakeFiles/mainservice.dir/src/service/service.cpp.o: /run/media/egor/ссд/project/tgboy/mainservice/src/service/service.cpp
+CMakeFiles/mainservice.dir/src/service/service.cpp.o: CMakeFiles/mainservice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mainservice.dir/src/service/service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainservice.dir/src/service/service.cpp.o -MF CMakeFiles/mainservice.dir/src/service/service.cpp.o.d -o CMakeFiles/mainservice.dir/src/service/service.cpp.o -c /run/media/egor/ссд/project/tgboy/mainservice/src/service/service.cpp
+
+CMakeFiles/mainservice.dir/src/service/service.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mainservice.dir/src/service/service.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/egor/ссд/project/tgboy/mainservice/src/service/service.cpp > CMakeFiles/mainservice.dir/src/service/service.cpp.i
+
+CMakeFiles/mainservice.dir/src/service/service.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mainservice.dir/src/service/service.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/egor/ссд/project/tgboy/mainservice/src/service/service.cpp -o CMakeFiles/mainservice.dir/src/service/service.cpp.s
+
+CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: CMakeFiles/mainservice.dir/flags.make
+CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: /run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.cpp
+CMakeFiles/mainservice.dir/src/controller/controller.cpp.o: CMakeFiles/mainservice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mainservice.dir/src/controller/controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainservice.dir/src/controller/controller.cpp.o -MF CMakeFiles/mainservice.dir/src/controller/controller.cpp.o.d -o CMakeFiles/mainservice.dir/src/controller/controller.cpp.o -c /run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.cpp
+
+CMakeFiles/mainservice.dir/src/controller/controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mainservice.dir/src/controller/controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.cpp > CMakeFiles/mainservice.dir/src/controller/controller.cpp.i
+
+CMakeFiles/mainservice.dir/src/controller/controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mainservice.dir/src/controller/controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/egor/ссд/project/tgboy/mainservice/src/controller/controller.cpp -o CMakeFiles/mainservice.dir/src/controller/controller.cpp.s
+
+CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: CMakeFiles/mainservice.dir/flags.make
+CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.cpp
+CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o: CMakeFiles/mainservice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o -MF CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o.d -o CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o -c /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.cpp
+
+CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.cpp > CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.i
+
+CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/egor/ссд/project/tgboy/mainservice/src/repository/user/userRepository.cpp -o CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.s
+
 # Object files for target mainservice
 mainservice_OBJECTS = \
-"CMakeFiles/mainservice.dir/src/main.cpp.o"
+"CMakeFiles/mainservice.dir/src/main.cpp.o" \
+"CMakeFiles/mainservice.dir/src/service/service.cpp.o" \
+"CMakeFiles/mainservice.dir/src/controller/controller.cpp.o" \
+"CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o"
 
 # External object files for target mainservice
 mainservice_EXTERNAL_OBJECTS =
 
 mainservice: CMakeFiles/mainservice.dir/src/main.cpp.o
+mainservice: CMakeFiles/mainservice.dir/src/service/service.cpp.o
+mainservice: CMakeFiles/mainservice.dir/src/controller/controller.cpp.o
+mainservice: CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o
 mainservice: CMakeFiles/mainservice.dir/build.make
 mainservice: CMakeFiles/mainservice.dir/compiler_depend.ts
 mainservice: CMakeFiles/mainservice.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mainservice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable mainservice"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mainservice.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,16 +1,8 @@
-#include <crow/app.h>
-#include <iostream>
-#include <crow.h>
+#include "controller/controller.h"
 
 int main(int argc, char **argv){
-    crow::SimpleApp app;
-    
-    
+    Controller controller;
+    controller.runController();
 
-    CROW_ROUTE(app, "/")([](){
-            return "Hello world";
-    });
-
-    app.port(8080).run();
     return 0;
 }

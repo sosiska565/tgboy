@@ -85,12 +85,12 @@ clean: CMakeFiles/mainservice.dir/clean
 CMakeFiles/mainservice.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=1,2 "Built target mainservice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target mainservice"
 .PHONY : CMakeFiles/mainservice.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mainservice.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mainservice.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles 0
 .PHONY : CMakeFiles/mainservice.dir/rule
@@ -102,7 +102,7 @@ mainservice: CMakeFiles/mainservice.dir/rule
 # codegen rule for target.
 CMakeFiles/mainservice.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainservice.dir/build.make CMakeFiles/mainservice.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=1,2 "Finished codegen for target mainservice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/run/media/egor/ссд/project/tgboy/mainservice/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target mainservice"
 .PHONY : CMakeFiles/mainservice.dir/codegen
 
 # clean rule for target.

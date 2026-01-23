@@ -1980,3 +1980,522 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.45.1
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:4 (find_package)"
+    name: "pqxx"
+    configs:
+      -
+        filename: "pqxxConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "pqxx-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pqxx"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/CMakeFiles/pkgRedirects/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/CMakeFiles/pkgRedirects/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/lib/hyde/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/lib/hyde/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/share/flatpak/exports/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/share/flatpak/exports/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/jvm/default/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/jvm/default/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/site_perl/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/site_perl/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/vendor_perl/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/vendor_perl/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/core_perl/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/core_perl/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/pqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/pqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/share/waybar/scripts"
+        - "/home/egor/.config/waybar/scripts"
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/egor/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:4 (find_package)"
+    name: "libpqxx"
+    configs:
+      -
+        filename: "libpqxxConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "libpqxx-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "libpqxx"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/CMakeFiles/pkgRedirects/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/CMakeFiles/pkgRedirects/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/lib/hyde/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/lib/hyde/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/share/flatpak/exports/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/egor/.local/share/flatpak/exports/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/jvm/default/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/jvm/default/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/site_perl/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/site_perl/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/vendor_perl/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/vendor_perl/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/core_perl/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/bin/core_perl/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/libpqxxConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/libpqxx-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/share/waybar/scripts"
+        - "/home/egor/.config/waybar/scripts"
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/egor/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
+      - "CMakeLists.txt:4 (find_package)"
+    mode: "program"
+    variable: "PKG_CONFIG_EXECUTABLE"
+    description: "pkg-config executable"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pkg-config"
+      - "pkgconf"
+    candidate_directories:
+      - "/home/egor/.config/hyde/scripts/"
+      - "/home/egor/.local/lib/hyde/"
+      - "/home/egor/.local/share/waybar/scripts/"
+      - "/home/egor/.config/waybar/scripts/"
+      - "/home/egor/.local/bin/"
+      - "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/home/egor/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/egor/.config/hyde/scripts/pkg-config"
+      - "/home/egor/.config/hyde/scripts/pkgconf"
+      - "/home/egor/.local/lib/hyde/pkg-config"
+      - "/home/egor/.local/lib/hyde/pkgconf"
+      - "/home/egor/.local/share/waybar/scripts/pkg-config"
+      - "/home/egor/.local/share/waybar/scripts/pkgconf"
+      - "/home/egor/.config/waybar/scripts/pkg-config"
+      - "/home/egor/.config/waybar/scripts/pkgconf"
+      - "/home/egor/.local/bin/pkg-config"
+      - "/home/egor/.local/bin/pkgconf"
+      - "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/pkg-config"
+      - "/run/media/egor/\u0441\u0441\u0434/project/tgboy/mainservice/build/pkgconf"
+      - "/usr/local/sbin/pkg-config"
+      - "/usr/local/sbin/pkgconf"
+      - "/usr/local/bin/pkg-config"
+      - "/usr/local/bin/pkgconf"
+    found: "/usr/bin/pkg-config"
+    search_context:
+      ENV{PATH}:
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/share/waybar/scripts"
+        - "/home/egor/.config/waybar/scripts"
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/egor/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "CMakeLists.txt:6 (pkg_check_modules)"
+    mode: "library"
+    variable: "pkgcfg_lib_PQXX_pqxx"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pqxx"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libpqxx.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/share/waybar/scripts"
+        - "/home/egor/.config/waybar/scripts"
+        - "/home/egor/.config/hyde/scripts"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/home/egor/.local/bin"
+        - "/home/egor/.local/lib/hyde"
+        - "."
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/egor/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...

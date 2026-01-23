@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/mainservice.dir/link.d CMakeFiles/mainservice.dir/src/main.cpp.o -o mainservice
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/mainservice.dir/link.d CMakeFiles/mainservice.dir/src/main.cpp.o CMakeFiles/mainservice.dir/src/service/service.cpp.o CMakeFiles/mainservice.dir/src/controller/controller.cpp.o CMakeFiles/mainservice.dir/src/repository/user/userRepository.cpp.o -o mainservice  -lpqxx

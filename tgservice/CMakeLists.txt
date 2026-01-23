@@ -3,11 +3,13 @@ project(tgservice)
 
 find_package(TgBot REQUIRED)
 find_package(Threads REQUIRED)
+find_package(cpr REQUIRED)
 
 add_executable(
     tgservice
     src/main.cpp
     src/service/service.cpp
+    src/controller/controller.cpp
 )
 
 target_link_libraries(
@@ -16,4 +18,5 @@ target_link_libraries(
     curl
     ssl
     crypto
+    cpr::cpr
 )
