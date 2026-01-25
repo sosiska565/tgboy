@@ -25,7 +25,7 @@ class UserSession{
         void next(TgBot::Bot& bot, TgBot::Message::Ptr msg, std::map<int64_t, UserSession>& sessions){
             switch(state){
                 case UserState::IDLE:
-                    bot.getApi().sendMessage(msg->chat->id, "Как тебя зовут?");
+                    bot.getApi().sendMessage(msg->chat->id, "Твоё имя: ");
                     state = UserState::WAIT_NAME;
                     break;
                 case UserState::WAIT_NAME:
@@ -35,17 +35,17 @@ class UserSession{
                     break;
                 case UserState::WAIT_SECONDNAME:
                     data["secondname"] = msg->text;
-                    bot.getApi().sendMessage(msg->chat->id, "Сколько тебе лет?");
-                    state = UserState::WAIT_DESC;
+                    bot.getApi().sendMessage(msg->chat->id, "Сколько тебе лет: ");
+                    state = UserState::WAIT_AGE;
                     break;
                 case UserState::WAIT_AGE:
                    data["age"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "Расскажи о себе");
+                   bot.getApi().sendMessage(msg->chat->id, "О себе: ");
                    state = UserState::WAIT_DESC;
                    break;
                 case UserState::WAIT_DESC:
                    data["discription"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "В каком ты городе?");
+                   bot.getApi().sendMessage(msg->chat->id, "Твой город: ");
                    state = UserState::WAIT_CITY;
                    break;
                 case UserState::WAIT_CITY:
