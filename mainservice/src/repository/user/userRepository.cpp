@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "user.h"
+#include <iostream>
 
 UserRepository::UserRepository(const std::string& conn_str) : conn(conn_str){
     pqxx::work txn(conn);
@@ -62,6 +63,9 @@ std::vector<User> UserRepository::getUsers(){
 
 User UserRepository::saveUser(User& user){
     pqxx::work txn(conn);
+    
+    std::cout << "USER ID: " << user.getTgId() << std::endl;
+
     txn.exec_params(
         R"(
             INSERT INTO users (
@@ -125,6 +129,9 @@ std::optional<User> UserRepository::getUserById(int64_t id){
     }
 
     auto const row = res[0];
+
+    std::cout << row["id"].as<int64_t>() << std::endl;
+
     User u;
     u.setTgId(row["id"].as<int64_t>());
     u.setAge(row["age"].as<int>());

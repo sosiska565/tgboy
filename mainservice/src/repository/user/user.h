@@ -1,6 +1,7 @@
 #ifndef USER_H
 #define USER_H
 
+#include <cstdint>
 #include <string>
 #include <nlohmann/json.hpp>
 
@@ -17,7 +18,7 @@ enum class UserState{
 
 class User {
     private:
-        int tgid;
+        int64_t tgid;
         int age;
         std::string name;
         std::string secondname;
@@ -29,7 +30,7 @@ class User {
         UserState state = UserState::IDLE;
 
     public:
-        int getTgId(){
+        int64_t getTgId(){
             return tgid;
         }
 
@@ -71,7 +72,7 @@ class User {
 
         //setters
 
-        void setTgId(int tgid){
+        void setTgId(int64_t tgid){
             this->tgid = tgid;
         }
 

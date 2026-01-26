@@ -1,6 +1,8 @@
 #include "controller.h"
 #include <cstdint>
 #include <map>
+#include <optional>
+#include <string>
 #include <tgbot/tgbot.h>
 #include <cpr/cpr.h>
 #include <nlohmann/json.hpp>
@@ -19,8 +21,6 @@ std::vector<std::string> split(const std::string& s, char delimiter) {
     return tokens;
 }
 
-std::map<int64_t, UserSession> sessions;
-
 void Controller::runBot(){
     std::ifstream tokensFile("../tokens.txt");
     std::string tokensLine;
@@ -37,18 +37,43 @@ void Controller::runBot(){
 
     if(token.empty()) throw "Error: token is empty";
 
+    Service service;
     TgBot::Bot bot(token);
 
     bot.getEvents().onAnyMessage([&](TgBot::Message::Ptr msg){
-        if (msg->text == "/start"){
-            sessions[msg->from->id] = UserSession();
+        std::optional<User> op_user = service.getUserById(msg->from->id);
+
+        if (msg->text == "/start") {
+            if (!op_user.has_value()) {
+                std::cout << "Creating a new user..." << std::endl;
+                User u;
+                u.setTgId(msg->from->id);
+                u.setState(UserState::WAIT_NAME);
+                service.createUser(u);
+                bot.getApi().sendMessage(msg->chat->id, "Привет! Как тебя зовут?");
+            } else {
+                std::string ancete;
+
+                ancete =    std::string("Твоя анкета\n") + 
+                            "Имя: " + op_user->getName() + "\n" +
+                            "Фамилия: " + op_user->getSecondName() + "\n" +
+                            "Возвраст: " + std::to_string(op_user->getAge()) + "\n" +
+                            "Описание: " + op_user->getDescription() + "\n" +
+                            "Город: " + op_user->getCity() + "\n";
+
+                bot.getApi().sendMessage(
+                    msg->chat->id,
+                    ancete 
+                );
+            }
+            return;
         }
 
-        if(sessions.count(msg->from->id)){
-            sessions[msg->from->id].next(bot, msg, sessions);
+        if (op_user.has_value() && op_user->getState() != UserState::IDLE) {
+            service.createAncete(msg->from->id, bot, msg);
         } else {
-            bot.getApi().sendMessage(msg->chat->id, "Чтобы начать /start");
-        }
+            bot.getApi().sendMessage(msg->chat->id, "Чтобы начать, напиши /start");
+        } 
     });
 
     try{
