@@ -65,36 +65,36 @@ std::optional<User> Service::createAncete(int64_t id, TgBot::Bot& bot, TgBot::Me
 
     switch(state){
         case UserState::IDLE:
-            bot.getApi().sendMessage(msg->chat->id, "Как тебя зовут?");
+            bot.getApi().sendMessage(msg->chat->id, "Напиши своё имя: ");
             state = UserState::WAIT_NAME;
             break;
         case UserState::WAIT_NAME:
             op_user->setName(msg->text);
-            bot.getApi().sendMessage(msg->chat->id, "Твоя фамилия:");
+            bot.getApi().sendMessage(msg->chat->id, "Напиши свою фамилию: ");
             op_user->setState(UserState::WAIT_SECONDNAME);
             break;
         case UserState::WAIT_SECONDNAME:
             op_user->setSecondName(msg->text);
-            bot.getApi().sendMessage(msg->chat->id, "Сколько тебе лет?");
+            bot.getApi().sendMessage(msg->chat->id, "Напиши свой возраст: ");
             op_user->setState(UserState::WAIT_AGE);
             break;
         case UserState::WAIT_AGE:
             op_user->setAge(std::stoi(msg->text));
-            bot.getApi().sendMessage(msg->chat->id, "Расскажи о себе");
+            bot.getApi().sendMessage(msg->chat->id, "Напиши информацию о себе: ");
             op_user->setState(UserState::WAIT_DESC);
             break;
         case UserState::WAIT_DESC:
             op_user->setDescription(msg->text);
-            bot.getApi().sendMessage(msg->chat->id, "В каком ты городе?");
+            bot.getApi().sendMessage(msg->chat->id, "Напиши свой город: ");
             op_user->setState(UserState::WAIT_CITY);
             break;
         case UserState::WAIT_CITY:
             op_user->setCity(msg->text);
-            bot.getApi().sendMessage(msg->chat->id, "Ты женщина или мужчина?");
+            bot.getApi().sendMessage(msg->chat->id, "Выбери свой пол: ");
             op_user->setState(UserState::WAIT_GENDER);
             break;
         case UserState::WAIT_GENDER:
-        bot.getApi().sendMessage(msg->chat->id, "Кого ты здесь ищешь? Мужчин или женщин?");
+        bot.getApi().sendMessage(msg->chat->id, "Выбери кого ты ищешь: ");
             op_user->setState(UserState::WAIT_SEARCHGENDER);
             break;
         case UserState::WAIT_SEARCHGENDER:
