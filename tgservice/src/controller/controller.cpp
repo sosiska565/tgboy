@@ -1,5 +1,6 @@
 #include "controller.h"
 #include <cstdint>
+#include <exception>
 #include <map>
 #include <optional>
 #include <string>
@@ -7,6 +8,7 @@
 #include <cpr/cpr.h>
 #include <nlohmann/json.hpp>
 #include <stdexcept>
+#include <tgbot/types/CallbackQuery.h>
 #include "../service/service.h"
 #include "../repository/user/user.h"
 
@@ -42,15 +44,15 @@ void Controller::runBot(){
 
     bot.getEvents().onAnyMessage([&](TgBot::Message::Ptr msg){
         std::optional<User> op_user = service.getUserById(msg->from->id);
-
         if (msg->text == "/start") {
             if (!op_user.has_value()) {
                 std::cout << "Creating a new user..." << std::endl;
                 User u;
                 u.setTgId(msg->from->id);
                 u.setState(UserState::WAIT_NAME);
+                std::cout << u.getTgId() << std::endl;
                 service.createUser(u);
-                bot.getApi().sendMessage(msg->chat->id, "Привет! Как тебя зовут?");
+                bot.getApi().sendMessage(msg->chat->id, "Твое имя: ");
             } else {
                 std::string ancete;
 
@@ -74,6 +76,43 @@ void Controller::runBot(){
         } else {
             bot.getApi().sendMessage(msg->chat->id, "Чтобы начать, напиши /start");
         } 
+    });
+
+    bot.getEvents().onCallbackQuery([&](TgBot::CallbackQuery::Ptr query){
+        std::optional<User> op_user = service.getUserById(query->from->id);    
+    
+        if(op_user.has_value()){
+            if(query->data == "isSearchingGender = female"){
+                op_user->setIsSearchingGender(false);
+                op_user->setState(UserState::WAIT_SEARCHGENDER);
+                service.createUser(op_user.value());
+                service.createAncete(query->from->id, bot, query->message);
+            }
+            else if(query->data == "isSearchingGender = male"){
+                op_user->setIsSearchingGender(true);
+                op_user->setState(UserState::WAIT_SEARCHGENDER);
+                service.createUser(op_user.value());
+                service.createAncete(query->from->id, bot, query->message);
+            }
+            else if(query->data == "gender = female"){
+                op_user->setGender(false);
+                op_user->setState(UserState::WAIT_GENDER);
+                service.createUser(op_user.value());
+                service.createAncete(query->from->id, bot, query->message);
+            }
+            else if(query->data == "gender = male"){
+                op_user->setGender(true);
+                op_user->setState(UserState::WAIT_GENDER);
+                service.createUser(op_user.value());
+                service.createAncete(query->from->id, bot, query->message);
+            }
+        }
+        try {
+            bot.getApi().answerCallbackQuery(query->id);
+        }
+        catch (std::exception ex){
+            std::cout << ex.what() << std::endl;
+        }
     });
 
     try{

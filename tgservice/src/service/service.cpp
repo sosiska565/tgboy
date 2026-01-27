@@ -88,34 +88,51 @@ std::optional<User> Service::createAncete(int64_t id, TgBot::Bot& bot, TgBot::Me
             bot.getApi().sendMessage(msg->chat->id, "Напиши свой город: ");
             op_user->setState(UserState::WAIT_CITY);
             break;
-        case UserState::WAIT_CITY:
+        case UserState::WAIT_CITY: {
             op_user->setCity(msg->text);
-            bot.getApi().sendMessage(msg->chat->id, "Выбери свой пол: ");
-            op_user->setState(UserState::WAIT_GENDER);
+
+            TgBot::InlineKeyboardMarkup::Ptr keyboard(new TgBot::InlineKeyboardMarkup);
+
+            std::vector<TgBot::InlineKeyboardButton::Ptr> row1;
+
+            TgBot::InlineKeyboardButton::Ptr maleBtn(new TgBot::InlineKeyboardButton);
+            maleBtn->text = "Мужчина";
+            maleBtn->callbackData = "gender = male";
+
+            TgBot::InlineKeyboardButton::Ptr femaleBtn(new TgBot::InlineKeyboardButton);
+
+            femaleBtn->text = "Женщина";
+            femaleBtn->callbackData = "gender = female";
+
+            row1.push_back(maleBtn);
+            row1.push_back(femaleBtn);
+            keyboard->inlineKeyboard.push_back(row1);
+
+            bot.getApi().sendMessage(msg->chat->id, "Твой пол", nullptr, nullptr, keyboard);
             break;
-        case UserState::WAIT_GENDER:
-        bot.getApi().sendMessage(msg->chat->id, "Выбери кого ты ищешь: ");
-            op_user->setState(UserState::WAIT_SEARCHGENDER);
+        }
+        case UserState::WAIT_GENDER: {
+            TgBot::InlineKeyboardMarkup::Ptr keyboard(new TgBot::InlineKeyboardMarkup);
+
+            std::vector<TgBot::InlineKeyboardButton::Ptr> row1;
+
+            TgBot::InlineKeyboardButton::Ptr maleBtn(new TgBot::InlineKeyboardButton);
+            maleBtn->text = "Мужчин";
+            maleBtn->callbackData = "isSearchingGender = male";
+
+            TgBot::InlineKeyboardButton::Ptr femaleBtn(new TgBot::InlineKeyboardButton);
+            femaleBtn->text = "Женщин";
+            femaleBtn->callbackData = "isSearchingGender = female";
+
+            row1.push_back(maleBtn);
+            row1.push_back(femaleBtn);
+            keyboard->inlineKeyboard.push_back(row1);
+
+            bot.getApi().sendMessage(msg->chat->id, "Выбери кого ты ищешь", nullptr, nullptr, keyboard);
             break;
+        }
         case UserState::WAIT_SEARCHGENDER:
-            //false = woman
-            //true = man
-            //костыль
-            //вместо if(msg->text == "1")
-            //нужно сделать 2 кнопки с выбором мужчины или женщины
-            TgBot::ReplyKeyboardMarkup::Ptr keyboard(new TgBot::ReplyKeyboardMarkup);
-            keyboard->resizeKeyboard = true;
-            TgBot::KeyboardButton::Ptr button1(new TgBot::KeyboardButton);
-            TgBot::KeyboardButton::Ptr button2(new TgBot::KeyboardButton);
-            std::vector<TgBot::KeyboardButton::Ptr> row0;
-            button1->text= "Мужской";
-            row0.push_back(button1);
-            button1->text= "Женский";
-            row0.push_back(button2);
-
-            keyboard->keyboard.push_back(row0);
-
-
+            
             bot.getApi().sendMessage(msg->chat->id, "Анкета успешно создана!");
             op_user->setState(UserState::IDLE);
             createUser(op_user.value());

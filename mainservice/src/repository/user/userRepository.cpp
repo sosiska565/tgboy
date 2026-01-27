@@ -111,6 +111,8 @@ User UserRepository::saveUser(User& user){
 
     txn.commit();
 
+    std::cout << "User created." << std::endl;
+
     return user;
 }
 
@@ -129,8 +131,6 @@ std::optional<User> UserRepository::getUserById(int64_t id){
     }
 
     auto const row = res[0];
-
-    std::cout << row["id"].as<int64_t>() << std::endl;
 
     User u;
     u.setTgId(row["id"].as<int64_t>());
