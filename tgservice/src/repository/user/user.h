@@ -17,60 +17,9 @@ enum class UserState{
     WAIT_SEARCHGENDER
 };
 
-class UserSession{
-    public:
-        UserState state = UserState::IDLE;
-        nlohmann::json data;
-
-        void next(TgBot::Bot& bot, TgBot::Message::Ptr msg, std::map<int64_t, UserSession>& sessions){
-            switch(state){
-                case UserState::IDLE:
-                    bot.getApi().sendMessage(msg->chat->id, "Твоё имя: ");
-                    state = UserState::WAIT_NAME;
-                    break;
-                case UserState::WAIT_NAME:
-                    data["name"] = msg->text;
-                    bot.getApi().sendMessage(msg->chat->id, "Твоя фамилия:");
-                    state = UserState::WAIT_SECONDNAME;
-                    break;
-                case UserState::WAIT_SECONDNAME:
-                    data["secondname"] = msg->text;
-                    bot.getApi().sendMessage(msg->chat->id, "Сколько тебе лет: ");
-                    state = UserState::WAIT_AGE;
-                    break;
-                case UserState::WAIT_AGE:
-                   data["age"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "О себе: ");
-                   state = UserState::WAIT_DESC;
-                   break;
-                case UserState::WAIT_DESC:
-                   data["discription"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "Твой город: ");
-                   state = UserState::WAIT_CITY;
-                   break;
-                case UserState::WAIT_CITY:
-                   data["city"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "Ты женщина или мужчина?");
-                   state = UserState::WAIT_GENDER;
-                   break;
-                case UserState::WAIT_GENDER:
-                   data["gender"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "Кого ты здесь ищешь? Мужчин или женщин?");
-                   state = UserState::WAIT_SEARCHGENDER;
-                   break;
-                case UserState::WAIT_SEARCHGENDER:
-                   data["searchgender"] = msg->text;
-                   bot.getApi().sendMessage(msg->chat->id, "Анкета успешно создана!");
-                   state = UserState::IDLE;
-                   sessions.erase(msg->from->id);
-                   break;
-            }
-        }
-};
-
 class User {
     private:
-        int tgid;
+        int64_t tgid;
         int age;
         std::string name;
         std::string secondname;
@@ -82,7 +31,7 @@ class User {
         UserState state = UserState::IDLE;
 
     public:
-        int getTgId(){
+        int64_t getTgId(){
             return tgid;
         }
 
@@ -124,7 +73,7 @@ class User {
 
         //setters
 
-        void setTgId(int tgid){
+        void setTgId(int64_t tgid){
             this->tgid = tgid;
         }
 
@@ -163,6 +112,8 @@ class User {
         void setState(UserState state){
             this->state = state;
         }
+
+        NLOHMANN_DEFINE_TYPE_INTRUSIVE(User, tgid, age, name, secondname, description, city, isSearching, isSearchingGender, gender, state)
 };
 
 #endif

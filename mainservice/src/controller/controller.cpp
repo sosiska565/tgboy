@@ -48,7 +48,7 @@ void Controller::runController(){
 
         User user;
 
-        user.setTgId(x["id"].i());
+        user.setTgId(x["tgid"].i());
         user.setAge(x["age"].i());
         user.setName(x["name"].s());
         user.setSecondName(x["secondname"].s());
